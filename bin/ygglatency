@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+
+import sys
+import ygglatency
+
+def main():
+    # Check that no args were passed in.
+    if len(sys.argv) > 1:
+        print("Usage: ygglatency")
+        return(1)
+
+    # Get latencies of all public peers.
+    latencies = ygglatency.run()
+    ygglatency.display(latencies)
+
+    return(0)
+
+if __name__ == '__main__':
+    sys.exit(main())
