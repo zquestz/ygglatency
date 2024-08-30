@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='ygglatency',
-      version='0.2.2',
+      version='0.2.3',
       description='Find the fastest Yggdrasil peers.',
       long_description=readme(),
       url='http://github.com/zquestz/ygglatency',
